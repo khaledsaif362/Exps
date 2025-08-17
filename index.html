@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Expense Tracker with Edit, Delete & CSV Export</title>
+  <title>Expense Tracker</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f3f7ff; margin: 40px; }
     h2 { text-align: center; color: #333; }
@@ -47,14 +47,12 @@
   </style>
 </head>
 <body>
-  <h2>Expense Tracker with Edit, Delete & CSV Export</h2>
+  <h2>Expense Tracker</h2>
   <div class="expense-container">
     <input type="date" id="date" />
     <input type="text" id="desc" placeholder="Expense description" />
     <input type="number" id="amount" placeholder="Amount (₹)" step="0.01" />
     <button onclick="addOrUpdateExpense()">Add Expense</button>
-    <button style="background:#3498db; margin-top: 10px;" onclick="exportToCSV()">Export to CSV</button>
-
     <table id="expenseTable">
       <thead>
         <tr>
